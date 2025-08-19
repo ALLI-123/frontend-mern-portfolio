@@ -98,12 +98,23 @@
 
   <section id="contact" class="section contact-section">
     <h2>Contact Me</h2>
-    <form action="http://localhost:5000/api/contact" method="POST">
+<!--     <form action="http://localhost:5000/api/contact" method="POST">
       <input type="text" name="name" placeholder="Your Name" required aria-label="Your Name" />
       <input type="email" name="email" placeholder="Your Email" required aria-label="Your Email" />
       <textarea name="message" placeholder="Your Message" required aria-label="Your Message"></textarea>
       <button type="submit">Send Message</button>
-    </form>
+    </form> -->
+
+  <form id="contactForm">
+  <input type="text" name="name" placeholder="Your Name" required aria-label="Your Name" />
+  <input type="email" name="email" placeholder="Your Email" required aria-label="Your Email" />
+  <textarea name="message" placeholder="Your Message" required aria-label="Your Message"></textarea>
+  <button type="submit">Send Message</button>
+</form>
+
+<p id="responseMessage"></p>
+
+  
   </section>
 
   <footer>
