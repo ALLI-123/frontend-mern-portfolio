@@ -63,48 +63,54 @@
     </nav>
 
   <header class="hero-section">
-   
-
     <div class="hero-content">
       <h1>Hi, I'm Hazzytech</h1>
-      <p class="tagline">Fullstack  Web Developer passionate about creating premium web applications.</p>
+      <p class="tagline">Fullstack Web Developer passionate about creating premium web applications.</p>
       <a href="#projects" class="btn">View My Work</a>
     </div>
   </header>
 
-  <section id="about" class="section about-section">
-    <h2>About Me</h2>
-    <p>I'm a self-taught web developer with a love for turning ideas into beautiful, functional websites.
-       I specialize in HTML, CSS, JavaScript, and the MERN stack. I enjoy building custom-made, premium web apps with full functionalities.</p>
-  </section>
+  <main>
+    <section id="about" class="section about-section">
+      <h2>About Me</h2>
+      <p>I'm a self-taught web developer with a love for turning ideas into beautiful, functional websites.
+         I specialize in HTML, CSS, JavaScript, and the MERN stack. I enjoy building custom-made, premium web apps with full functionalities.</p>
+    </section>
 
-  <section id="projects" class="section projects-section">
-    <h2>Projects</h2>
+    <section id="projects" class="section projects-section">
+      <h2>Projects</h2>
 
-    <div class="project">
-      <h3>Simple Portfolio</h3>
-      <p>A minimal personal portfolio site showcasing my work and skills. </p>
-      <a href="#" target="_blank" rel="noopener noreferrer">Live Demo</a> |
-      <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
-    </div>
+      <div class="project">
+        <h3>Simple Portfolio</h3>
+        <p>A minimal personal portfolio site showcasing my work and skills. </p>
+        <a href="#" target="_blank" rel="noopener noreferrer">Live Demo</a> |
+        <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
 
-    <div class="project">
-      <h3>Product Landing Page</h3>
-      <p>A responsive landing page built with a clean design and a focus on user experience.</p>
-      <a href="https://hazzywrist.carrd.co/" target="_blank" rel="noopener noreferrer">Live Demo</a> |
-      <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
-    </div>
-  </section>
+      <div class="project">
+        <h3>Product Landing Page</h3>
+        <p>A responsive landing page built with a clean design and a focus on user experience.</p>
+        <a href="https://hazzywrist.carrd.co/" target="_blank" rel="noopener noreferrer">Live Demo</a> |
+        <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </section>
 
-  <section id="contact" class="section contact-section">
-    <h2>Contact Me</h2>
-    <form id="contact" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required aria-label="Your Name" />
-      <input type="email" name="email" placeholder="Your Email" required aria-label="Your Email" />
-      <textarea name="message" placeholder="Your Message" required aria-label="Your Message"></textarea>
-      <button type="submit"> Subscribe Now</button>
-    </form>
-  </section>
+    <section id="contact" class="section contact-section">
+      <h2>Contact Me</h2>
+      <form id="contact-form" method="POST">
+        <label for="name" class="sr-only">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required aria-label="Your Name" autocomplete="name" />
+
+        <label for="email" class="sr-only">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required aria-label="Your Email" autocomplete="email" />
+
+        <label for="message" class="sr-only">Message</label>
+        <textarea id="message" name="message" placeholder="Your Message" required aria-label="Your Message"></textarea>
+
+        <button type="submit">Join My Waiting List</button>
+      </form>
+    </section>
+  </main>
 
   <footer>
     <p>&copy; 2025 Hazzytechz. All rights reserved.</p>
