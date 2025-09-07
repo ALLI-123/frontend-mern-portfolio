@@ -7,7 +7,6 @@ document.querySelector('.btn').addEventListener('click', function(e) {
   }
 });
 
-
 // Toggle mobile menu
 const toggleBtn = document.getElementById('menu-toggle');
 const navLinks = document.getElementById('nav-links');
@@ -29,7 +28,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-
+// Contact form submission
 document.getElementById("contact").addEventListener("submit", async (e) => {
   e.preventDefault(); // stop page reload
 
@@ -37,8 +36,14 @@ document.getElementById("contact").addEventListener("submit", async (e) => {
   const email = e.target.email.value;
   const message = e.target.message.value;
 
+  // ✅ Switch between local and production automatically
+  const API_BASE =
+    window.location.hostname === "localhost"
+      ? "http://localhost:5000"
+      : "https://your-backend-service.onrender.com"; // replace with your actual Render URL
+
   try {
-    const res = await fetch("http://localhost:5000/api/contact", {
+    const res = await fetch(`${API_BASE}/api/contact`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name, email, message })
@@ -55,7 +60,3 @@ document.getElementById("contact").addEventListener("submit", async (e) => {
     alert("⚠️ Server not reachable.");
   }
 });
-
-
-
-
