@@ -40,7 +40,7 @@ document.getElementById("contact").addEventListener("submit", async (e) => {
   const API_BASE =
     window.location.hostname === "localhost"
       ? "http://localhost:5000"
-      : "https://your-backend-service.onrender.com"; // replace with your actual Render URL
+      : "https://backend-mern-portfolio.onrender.com"; // replace with your actual Render URL
 
   try {
     const res = await fetch(`${API_BASE}/api/contact`, {
