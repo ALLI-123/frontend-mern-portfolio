@@ -43,7 +43,7 @@ document.getElementById("contact").addEventListener("submit", async (e) => {
       : "https://backend-mern-portfolio.onrender.com"; // replace with your actual Render URL
 
   try {
-    const res = await fetch(`${API_BASE}/api/contact`, {
+    const res = await fetch("https://backend-mern-portfolio.onrender.com/api/contact", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name, email, message })
